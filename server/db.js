@@ -5,7 +5,7 @@ db.exec(`
 CREATE TABLE IF NOT EXISTS capsules (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   user_id TEXT NOT NULL,
-  project_name TEXT,
+  project_name TEXT NOT NULL,
   prompt_title TEXT NOT NULL,
   prompt_version TEXT,
   prompt_text TEXT NOT NULL,
